@@ -1,5 +1,27 @@
-#a {
-    font-family: 'Poppins', sans-serif;
-    
-    color: white;
+body {
+    height: 100vh;
+}
+
+#spn-logo {
+    font-size: 1.5em;
+
+    font-family: "Average", serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+#navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.2em !important;
+    font-weight: 700 !important;
+}
+
+.me-2 {
+    size: 24px;
+    margin-top: -1em;
 }
