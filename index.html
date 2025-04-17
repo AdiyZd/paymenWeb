@@ -5,14 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyPaymen</title>
-    <link rel="icon" href="src/logo/internet/Payment-Logo.png" type="image/png"/>
+    <link rel="icon" href="src/logo/internet/Payment-Logo.png" type="image/png" />
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/hover.css" />
+    <link rel="stylesheet" href="src/css/card.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=NamaFont&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Average&family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap"
         rel="stylesheet">
@@ -60,7 +62,7 @@
             temukan kemudahan untuk bertransaksi di Adiy Store!. Dan nikmati semua kemudahan berbelanja
         </p>
     </div>
-    <div class="container text-center mt-5 opsi2" id="payment">
+    <div class="container text-center opsi2" id="payment">
         <h1 class="payment-menu">Payment</h1>
     </div>
     <div class="container main-menu" id="card">
@@ -74,9 +76,11 @@
                     <div class="bank-body">
                         <div class="bank-row">
                             <div class="bank-label">Bank:</div>
-                            <div class="bank-value">
+                            <img src="src/logo/img/gopayU.png" alt="GOPAY Logo" class="gopay"
+                                onerror="this.style.display='none'">
+                            <!-- <div class="bank-value">
                                 GOPAY
-                            </div>
+                            </div> -->
                         </div>
                         <div class="bank-row">
                             <div class="bank-label">Store:</div>
@@ -108,9 +112,11 @@
                     <div class="bank-body">
                         <div class="bank-row">
                             <div class="bank-label">Bank:</div>
-                            <div class="bank-value">
+                            <img src="src/logo/img/danaU.png" alt="DANA Logo" class="dana"
+                                onerror="this.style.display='none'">
+                            <!-- <div class="bank-value">
                                 DANA
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="bank-row">
@@ -145,9 +151,11 @@
                     <div class="bank-body">
                         <div class="bank-row">
                             <div class="bank-label">Bank:</div>
-                            <div class="bank-value">
+                            <img src="src/logo/img/ovoU.png" alt="OVO Logo" class="ovo"
+                                onerror="this.style.display='none'">
+                            <!-- <div class="bank-value">
                                 OVO
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="bank-row">
@@ -184,8 +192,8 @@
                             <div class="bank-label">Bank:</div>
                             <div class="bank-value">
                                 <span class="virtual-badge">Virtual</span>
-                                <img src="https://logo.clearbit.com/cimbniaga.com" alt="CIMB Logo" class="bank-logo cimb"
-                                    onerror="this.style.display='none'">
+                                <img src="https://logo.clearbit.com/cimbniaga.com" alt="CIMB Logo"
+                                    class="bank-logo cimb" onerror="this.style.display='none'">
                                 CIMB Niaga
                             </div>
                         </div>
@@ -295,6 +303,136 @@
         </div>
     </div>
     <!-- END Content Payment -->
+
+    <!-- INSTALASi -->
+    <div class="container text-center opsi2" id="instruksi">
+        <h1 class="payment-menu">Instruksi Payment</h1>
+    </div>
+    <!-- card list instalasi -->
+    <div class="container mt-5 d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="container1">
+                <div class="left">
+                    <!-- Step Indicator -->
+                    <div class="step-indicator text-center">1</div>
+                </div>
+                <div class="right d-flex justify-content-center align-items-center">
+                    <div class="text-wrap">
+                        <h3 class="h3">Pilih metode pembayaran</h3>
+                        <p class="text-content p1">
+                            Silahkan pilih metode pembayaran yang ingin anda gunakan untuk
+                            melakukan pembayaran. Anda dapat memilih antara transfer bank,
+                            e-wallet, atau metode pembayaran lainnya yang tersedia.
+                        </p>
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="container mt-4 d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="container1">
+                <div class="left">
+                    <!-- Step Indicator -->
+                    <div class="step-indicator text-center">2</div>
+                </div>
+                <div class="right d-flex justify-content-center align-items-center">
+                    <div class="text-wrap">
+                        <h3 class="h3">Pembayaran</h3>
+                        <p class="text-content p1">
+                            Setelah memilih metode pembayaran, silahkan lakukan pembayaran
+                            sesuai dengan instruksi yang diberikan. Pastikan untuk memasukkan
+                            jumlah yang tepat dan mengikuti langkah-langkah yang ditentukan.
+                        </p>
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="container mt-4 mb-5 d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="container1">
+                <div class="left">
+                    <!-- Step Indicator -->
+                    <div class="step-indicator text-center">3</div>
+                </div>
+                <div class="right d-flex justify-content-center align-items-center">
+                    <div class="text-wrap">
+                        <h3 class="h3">Konfimasi Pembayaran</h3>
+                        <p class="text-content p1">
+                            Setelah memilih metode pembayaran, silahkan lakukan pembayaran
+                            sesuai dengan instruksi yang diberikan. Pastikan untuk memasukkan
+                            jumlah yang tepat dan mengikuti langkah-langkah yang ditentukan.<br>
+                            Jika sudah melakukan pembayaran silahkan konfirmasi ke whatsapp saya : <a
+                                href="https://wa.me/6288216796297?text=Halo%20mas%20adi%20saya%20ingin%20konfirmasi%20detail%20pembayaran.%20Terimakasih"
+                                target="_blank">
+                                Konfirmasi via WhatsApp
+                            </a>
+                        </p>
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    <footer class="bg-dark text-white py-3 mt-auto mt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom 1: Tentang Kami -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Tentang Kami</h5>
+                    <p class="text-secondary text-start">
+                        Perusahaan bergerak di bidang teknologi, yang memberikan kemudahan dalam melakukan
+                        transaksi online. Kami menyediakan berbagai metode pembayaran yang aman dan cepat.
+                    </p>
+                </div>
+
+                <!-- Kolom 2: Link -->
+                <div class="col-md-2 mb-3">
+                    <h5>Link Cepat</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#index" class="text-decoration-none text-white-50">Beranda</a></li>
+                        <li><a href="#payment" class="text-decoration-none text-white-50">Produk</a></li>
+                        <li><a href="#instruksi" class="text-decoration-none text-white-50">instalasi</a></li>
+                        <li><a href="#footer" class="text-decoration-none text-white-50">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Kontak -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Kontak</h5>
+                    <ul class="list-unstyled  text-secondary">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> Jawa tengah, Indonesia</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> adiyzdbusinnes@gmail.com</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i> +62 8821-6796-297</li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 4: Sosial Media -->
+                <div class="col-md-3 mb-3">
+                    <h5>Sosial Media</h5>
+                    <div class="social-icons text-white">
+                        <a href="https://www.facebook.com/profile.php?id=100035408843000" target="_blank" class="text-white me-2"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="https://www.instagram.com/xyd_adiy" target="_blank" class="text-white me-2"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="https://www.threads.net/@xyd_adiy?xmt=AQGzD57f68mNa0e4GFqLTyKJbKi9fEX7U2jbjtZCOrvL7C8" target="_blank" class="text-white me-2"><i class="bi bi-threads fs-3"></i></a>  <!-- Threads -->
+                        <a href="https://github.com/AdiyZd" target="_blank" class="text-white me-2"><i class="bi bi-github fs-3"></i></a>    <!-- GitHub -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row pt-3 border-top">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0" id="p0">&copy; 2025 Adiy Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>

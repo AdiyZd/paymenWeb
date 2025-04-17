@@ -4,7 +4,7 @@
     --light: #f8f9fa;
 }
 body {
-    min-height: 1000px;
+    min-height: 1700px;
     background-color: #f5f7ff !important;
     font-family: 'Segoe UI', system-ui, sans-serif;
 }
@@ -137,8 +137,33 @@ body {
     margin-right: 8px;
 }
 
+/* DESAIN COREL GAMBAR KURANG BESAR */
+.ovo {
+    height: 20px;
+    width: 50px;
+}
+
+.dana {
+    height: 23px;
+    width: 50px;
+}
+
+.gopay {
+    height: 23px;
+    width: 70px;
+}
+
 /* end payment */
 
-.main-menu {padding-top: 2rem !important;}
-.menu1 {padding-top: 10rem !important;}
-.opsi2 {padding-top: 10rem !important;}
+.main-menu {padding-bottom: 3rem !important;}
+.menu1 {padding-top: 8rem !important;}
+.opsi2 {padding-top: 7rem !important;}
+
+
+#footer {
+    padding-top: 3rem !important;
+}
+
+#p0 {
+    color: white !important;
+}
