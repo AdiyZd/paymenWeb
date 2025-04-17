@@ -1,5 +1,12 @@
+:root {
+    --primary: #00aae7;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+}
 body {
-    height: 100vh;
+    min-height: 1000px;
+    background-color: #f5f7ff !important;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 #spn-logo {
@@ -25,3 +32,113 @@ body {
     size: 24px;
     margin-top: -1em;
 }
+
+
+.H1-payment {
+    font-weight: 900 !important;
+    /* color: #3D90D7; */
+    color: #0A5EB0;
+
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 3.2em;
+}
+
+.p-payment {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.payment-menu {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800 !important;
+    color: #2A3335;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.payment-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #0A5EB0;
+    border-radius: 50px;
+}
+
+/* payment */
+.bank-card {
+    max-width: 400px;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.bank-header {
+    background: var(--primary);
+    color: white;
+    padding: 1.2rem;
+    font-weight: 600;
+}
+
+.bank-body {
+    padding: 1.5rem;
+}
+
+.bank-row {
+    display: flex;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+.bank-label {
+    width: 110px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.bank-value {
+    flex: 1;
+    font-weight: 500;
+    color: var(--dark);
+    word-break: break-all;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bank-logo {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.virtual-badge {
+    background: #e3f7ff;
+    color: var(--primary);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* end payment */
+
+.main-menu {padding-top: 2rem !important;}
+.menu1 {padding-top: 10rem !important;}
+.opsi2 {padding-top: 10rem !important;}

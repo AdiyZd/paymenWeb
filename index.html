@@ -5,47 +5,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyPaymen</title>
+    <link rel="icon" href="src/logo/internet/Payment-Logo.png" type="image/png"/>
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/hover.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=NamaFont&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Average&family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="bg-primary text-white py-3" id="navbar">
+    <nav class="bg-primary text-white py-3 fixed-top" id="navbar">
         <div class="container" id="navcontainer">
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
+            <div
+                class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
                 <a class="navbar-brand d-inline-flex align-items-center text-white mb-2 mb-md-0" href="#">
                     <img src="src/logo/img/payment.png" alt="Logo" width="30" height="24" class="me-2" />
                     <span id="spn-logo">Adiy Paymen</span>
                 </a>
-    
+
                 <ul class="nav justify-content-center nav-animated">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
+                        <a class="nav-link text-white" href="#index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#Servis">Servis</a>
+                        <a class="nav-link text-white" href="#payment">Payment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#Contct">Contact</a>
+                        <a class="nav-link text-white" href="#instruksi">Instruksi PAY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#Payment">Payment</a>
+                        <a class="nav-link text-white" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-
     <!-- END NAVBAR -->
+
+    <!-- Content Payment -->
+    <div class="container text-center menu1" id="index">
+        <h1 class="H1-payment mb-2">Payment Adiy Store</h1>
+        <p class="p-payment text-secondary-emphasis opacity-75">Di adiy payment menerima berbagai macam pembayaran
+            meliputi Dana, Ovo, Virtual Bank, dan Linkaja
+            <br>
+            temukan kemudahan untuk bertransaksi di Adiy Store!. Dan nikmati semua kemudahan berbelanja
+        </p>
+    </div>
+    <div class="container text-center mt-5 opsi2" id="payment">
+        <h1 class="payment-menu">Payment</h1>
+    </div>
+    <div class="container main-menu" id="card">
+        <div class="row">
+            <!-- Bank 1 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer GOPAY
+                    </div>
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                GOPAY
+                            </div>
+                        </div>
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bank 2 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer DANA
+                    </div>
+
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                DANA
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bank 3 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer OVO
+                    </div>
+
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                OVO
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bank 4 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer Virtual Bank CIMB Niaga
+                    </div>
+
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                <span class="virtual-badge">Virtual</span>
+                                <img src="https://logo.clearbit.com/cimbniaga.com" alt="CIMB Logo" class="bank-logo cimb"
+                                    onerror="this.style.display='none'">
+                                CIMB Niaga
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bank 5 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer Virtual Bank BCA
+                    </div>
+
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                <span class="virtual-badge">Virtual</span>
+                                <img src="https://logo.clearbit.com/bca.co.id" alt="BCA Logo" class="bank-logo"
+                                    onerror="this.style.display='none'">
+                                BCA
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bank 6 -->
+            <div class="col-12 col-md-4">
+                <div class="bank-card">
+                    <div class="bank-header text-center">
+                        Transfer Virtual Bank BRI
+                    </div>
+
+                    <div class="bank-body">
+                        <div class="bank-row">
+                            <div class="bank-label">Bank:</div>
+                            <div class="bank-value">
+                                <span class="virtual-badge">Virtual</span>
+                                <img src="https://logo.clearbit.com/bri.co.id" alt="BRI Logo" class="bank-logo"
+                                    onerror="this.style.display='none'">
+                                BRI
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Store:</div>
+                            <div class="bank-value">Adiy Store</div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Nomor:</div>
+                            <div class="bank-value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyToClipboard('1234567890')">
+                                    <i class="far fa-copy"></i> Copy
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bank-row">
+                            <div class="bank-label">Atas Nama:</div>
+                            <div class="bank-value">Adi* S***** J***</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Content Payment -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
