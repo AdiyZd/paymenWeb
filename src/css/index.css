@@ -13,7 +13,7 @@ body {
     font-size: 1.5em;
 
     font-family: "Average", serif !important;
-    font-weight: 600 !important;
+    font-weight: 900 !important;
     font-style: normal !important;
 }
 
@@ -160,4 +160,8 @@ body {
 
 #p0 {
     color: white !important;
+}
+
+@media screen and (max-width: 768px) {    
+    
 }

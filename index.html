@@ -9,24 +9,20 @@
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/hover.css" />
     <link rel="stylesheet" href="src/css/card.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=NamaFont&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Average&family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap"
-        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="bg-primary text-white py-3 fixed-top" id="navbar">
-        <div class="container" id="navcontainer">
+        <div class="container-fluid" id="navcontainer">
             <div
                 class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
                 <a class="navbar-brand d-inline-flex align-items-center text-white mb-2 mb-md-0" href="#">
@@ -42,9 +38,9 @@
                         <a class="nav-link text-white" href="#payment">Payment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#instruksi">Instruksi PAY</a>
+                        <a class="nav-link text-white" href="#instruksi">Instruksi (PAY)</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="contactsaya">
                         <a class="nav-link text-white" href="#footer">Contact</a>
                     </li>
                 </ul>
@@ -54,7 +50,7 @@
     <!-- END NAVBAR -->
 
     <!-- Content Payment -->
-    <div class="container text-center menu1" id="index">
+    <div class="container text-center menu1" data-aos="fade-down" id="index">
         <h1 class="H1-payment mb-2">Payment Adiy Store</h1>
         <p class="p-payment text-secondary-emphasis opacity-75">Di adiy payment menerima berbagai macam pembayaran
             meliputi Dana, Ovo, Virtual Bank, dan Linkaja
@@ -62,13 +58,13 @@
             temukan kemudahan untuk bertransaksi di Adiy Store!. Dan nikmati semua kemudahan berbelanja
         </p>
     </div>
-    <div class="container text-center opsi2" id="payment">
-        <h1 class="payment-menu">Payment</h1>
+    <div class="container text-center opsi2"  id="payment">
+        <h1 class="payment-menu" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">Payment</h1>
     </div>
     <div class="container main-menu" id="card">
         <div class="row">
             <!-- Bank 1 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="0">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer GOPAY
@@ -103,7 +99,7 @@
                 </div>
             </div>
             <!-- bank 2 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="75">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer DANA
@@ -113,7 +109,8 @@
                         <div class="bank-row">
                             <div class="bank-label">Bank:</div>
                             <!-- <img src="https://images.seeklogo.com/logo-png/39/1/dana-e-wallet-app-logo-png_seeklogo-399948.png" alt="dana Logo" width="60" height=""> -->
-                            <img src="src/logo/img/Udana.png" alt="DANA Logo" class="dana" onerror="this.style.display='none'">
+                            <img src="src/logo/img/Udana.png" alt="DANA Logo" class="dana"
+                                onerror="this.style.display='none'">
                             <!-- <div class="bank-value">
                                 DANA
                             </div> -->
@@ -142,7 +139,7 @@
                 </div>
             </div>
             <!-- bank 3 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="150">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer OVO
@@ -153,9 +150,6 @@
                             <div class="bank-label">Bank:</div>
                             <img src="src/logo/img/ovoU.png" alt="OVO Logo" class="ovo"
                                 onerror="this.style.display='none'">
-                            <!-- <div class="bank-value">
-                                OVO
-                            </div> -->
                         </div>
 
                         <div class="bank-row">
@@ -181,7 +175,7 @@
                 </div>
             </div>
             <!-- bank 4 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="150">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer Virtual Bank CIMB Niaga
@@ -221,7 +215,7 @@
                 </div>
             </div>
             <!-- bank 5 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="75">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer Virtual Bank BCA
@@ -261,7 +255,7 @@
                 </div>
             </div>
             <!-- bank 6 -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-once="false" data-aos-delay="0">
                 <div class="bank-card">
                     <div class="bank-header text-center">
                         Transfer Virtual Bank BRI
@@ -305,11 +299,11 @@
     <!-- END Content Payment -->
 
     <!-- INSTALASi -->
-    <div class="container text-center opsi2" id="instruksi">
+    <div class="container text-center opsi2" data-aos="fade-down" data-aos-once="true" id="instruksi">
         <h1 class="payment-menu">Instruksi Payment</h1>
     </div>
     <!-- card list instalasi -->
-    <div class="container mt-5 d-flex justify-content-center align-items-center">
+    <div class="container mt-5 d-flex justify-content-center align-items-center"  data-aos="fade-right" data-aos-delay="0" data-aos-once="false">
         <div class="card">
             <div class="container1">
                 <div class="left">
@@ -331,7 +325,7 @@
         </div>
     </div>
     <!-- 2 -->
-    <div class="container mt-4 d-flex justify-content-center align-items-center">
+    <div class="container mt-4 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="300" data-aos-once="false">
         <div class="card">
             <div class="container1">
                 <div class="left">
@@ -353,7 +347,7 @@
         </div>
     </div>
     <!-- 3 -->
-    <div class="container mt-4 mb-5 d-flex justify-content-center align-items-center">
+    <div class="container mt-4 mb-5 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-delay="600" data-aos-once="false">
         <div class="card">
             <div class="container1">
                 <div class="left">
@@ -380,60 +374,67 @@
         </div>
     </div>
     <!-- footer end -->
-    <footer class="bg-dark text-white py-3 mt-auto mt-5" id="footer">
+    <footer class="bg-dark text-white py-4 mt-auto" id="footer">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <!-- Kolom 1: Tentang Kami -->
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-white">Tentang Kami</h5>
-                    <p class="text-secondary text-start">
-                        Perusahaan bergerak di bidang teknologi, yang memberikan kemudahan dalam melakukan
+                <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-once="true" data-aos-delay="350">
+                    <h5 class="text-white mb-3">Tentang Kami</h5>
+                    <p class="text-white-50">
+                        Perusahaan bergerak di bidang teknologi yang memberikan kemudahan dalam melakukan
                         transaksi online. Kami menyediakan berbagai metode pembayaran yang aman dan cepat.
                     </p>
                 </div>
 
-                <!-- Kolom 2: Link -->
-                <div class="col-md-2 mb-3">
-                    <h5>Link Cepat</h5>
-                    <ul class="list-unstyled text-secondary">
-                        <li><a href="#index" class="text-decoration-none text-white-50">Beranda</a></li>
-                        <li><a href="#payment" class="text-decoration-none text-white-50">Produk</a></li>
-                        <li><a href="#instruksi" class="text-decoration-none text-white-50">instalasi</a></li>
-                        <li><a href="#footer" class="text-decoration-none text-white-50">Kontak</a></li>
+                <!-- Kolom 2: Link Cepat -->
+                <div class="col-lg-2 col-md-6"  data-aos="fade-right" data-aos-once="true" data-aos-delay="700">
+                    <h5 class="text-white mb-3">Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#index" class="text-white-50 text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="#payment" class="text-white-50 text-decoration-none">Produk</a></li>
+                        <li class="mb-2"><a href="#instruksi" class="text-white-50 text-decoration-none">Instalasi</a>
+                        </li>
+                        <li class="mb-2"><a href="#footer" class="text-white-50 text-decoration-none">Kontak</a></li>
                     </ul>
                 </div>
 
                 <!-- Kolom 3: Kontak -->
-                <div class="col-md-3 mb-3">
-                    <h5 class="text-white">Kontak</h5>
-                    <ul class="list-unstyled  text-secondary">
-                        <li><i class="bi bi-geo-alt-fill me-2"></i> Jawa tengah, Indonesia</li>
-                        <li><i class="bi bi-envelope-fill me-2"></i> adiyzdbusinnes@gmail.com</li>
-                        <li><i class="bi bi-telephone-fill me-2"></i> +62 8821-6796-297</li>
+                <div class="col-lg-3 col-md-6"  data-aos="fade-right" data-aos-once="true" data-aos-delay="750">
+                    <h5 class="text-white mb-3">Kontak</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Jawa Tengah, Indonesia</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> adiyzdbusinnes@gmail.com</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +62 8821-6796-297</li>
                     </ul>
                 </div>
 
                 <!-- Kolom 4: Sosial Media -->
-                <div class="col-md-3 mb-3">
-                    <h5>Sosial Media</h5>
-                    <div class="social-icons text-white">
-                        <a href="https://www.facebook.com/profile.php?id=100035408843000" target="_blank" class="text-white me-2"><i class="bi bi-facebook fs-3"></i></a>
-                        <a href="https://www.instagram.com/xyd_adiy" target="_blank" class="text-white me-2"><i class="bi bi-instagram fs-3"></i></a>
-                        <a href="https://www.threads.net/@xyd_adiy?xmt=AQGzD57f68mNa0e4GFqLTyKJbKi9fEX7U2jbjtZCOrvL7C8" target="_blank" class="text-white me-2"><i class="bi bi-threads fs-3"></i></a>  <!-- Threads -->
-                        <a href="https://github.com/AdiyZd" target="_blank" class="text-white me-2"><i class="bi bi-github fs-3"></i></a>    <!-- GitHub -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-once="true" data-aos-delay="1000">
+                    <h5 class="text-white mb-3">Sosial Media</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100035408843000" target="_blank"
+                            class="text-white me-3 d-inline-block mb-2"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.instagram.com/xyd_adiy" target="_blank"
+                            class="text-white me-3 d-inline-block mb-2"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://www.threads.net/@xyd_adiy?xmt=AQGzD57f68mNa0e4GFqLTyKJbKi9fEX7U2jbjtZCOrvL7C8"
+                            target="_blank" class="text-white me-3 d-inline-block mb-2"><i
+                                class="bi bi-threads fs-4"></i></a>
+                        <a href="https://github.com/AdiyZd" target="_blank"
+                            class="text-white me-3 d-inline-block mb-2"><i class="bi bi-github fs-4"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Copyright -->
-            <div class="row pt-3 border-top">
+            <div class="row pt-3 mt-3 border-top" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
                 <div class="col-12 text-center">
-                    <p class="text-muted mb-0" id="p0">&copy; 2025 Adiy Store. All rights reserved.</p>
+                    <p class="text-white-50 mb-0">&copy; 2025 Adiy Store. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 
