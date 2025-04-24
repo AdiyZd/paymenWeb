@@ -1,3 +1,3 @@
 # paymenWeb
 
-## (Dokumentasi)[https://adiyzd.github.io/paymenWeb/]
+## [Dokumentasi](https://adiyzd.github.io/paymenWeb/)
