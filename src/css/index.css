@@ -3,14 +3,20 @@
     --dark: #1a1a1a;
     --light: #f8f9fa;
 }
+
+html {
+    overflow-x: hidden;
+}
+
 body {
+    overflow-x: hidden;
     min-height: 1700px;
     background-color: #f5f7ff !important;
     font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 #spn-logo {
-    font-size: 1.5em;
+    font-size: 20px;
 
     font-family: "Average", serif !important;
     font-weight: 900 !important;
@@ -162,6 +168,31 @@ body {
     color: white !important;
 }
 
-@media screen and (max-width: 768px) {    
-    
+@media screen and (max-width: 760px) {    
+    #navbar {
+        height: 190px;
+    }  
+
+    #navcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .navbar-brand, .nav-item {
+        white-space: nowrap;
+    }
+
+    #contactsaya {
+        display: none;
+    }
+
+    .menu1 {padding-top: 15rem !important;}
+    .opsi2 {padding-top: 13rem !important;}
+}
+
+@media screen and (max-width: 760px)  {
+    #contactsaya {
+        display: flex;
+    }
 }
